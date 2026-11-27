@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mahesh M | Data Analyst</title>
+<meta name="description" content="Data analyst portfolio: healthcare payments analytics, SQL, Python, dashboards.">
+<style>
+:root{--ink:#12202e;--mute:#5b6b7a;--acc:#1f4e79;--bg:#f6f8fa}
+*{box-sizing:border-box}body{margin:0;font:16px/1.6 -apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;color:var(--ink);background:#fff}
+.wrap{max-width:980px;margin:0 auto;padding:0 24px}
+header{background:linear-gradient(135deg,#12324f,#1f4e79);color:#fff;padding:72px 0 64px}
+h1{font-size:44px;margin:0 0 6px}.tag{font-size:20px;opacity:.9;margin:0 0 22px}
+.links a{display:inline-block;margin-right:12px;padding:9px 18px;border:1px solid rgba(255,255,255,.7);border-radius:6px;color:#fff;text-decoration:none;font-weight:600}
+.links a:hover{background:#fff;color:var(--acc)}
+section{padding:48px 0}h2{font-size:26px;margin:0 0 18px;color:var(--acc)}
+.skills span{display:inline-block;background:var(--bg);border:1px solid #dde4ea;border-radius:20px;padding:5px 14px;margin:0 8px 8px 0;font-size:14px}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px;margin:22px 0}
+.stat{background:var(--bg);border-radius:8px;padding:16px}.stat b{display:block;font-size:26px;color:var(--acc)}.stat small{color:var(--mute)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(420px,1fr));gap:20px;margin-top:22px}
+.grid figure{margin:0;border:1px solid #e1e7ec;border-radius:8px;overflow:hidden}.grid img{width:100%;display:block}
+figcaption{padding:10px 14px;font-size:14px;color:var(--mute)}
+.card{border:1px solid #e1e7ec;border-radius:10px;padding:26px}
+footer{padding:28px 0;color:var(--mute);font-size:14px;border-top:1px solid #e8edf1}
+a{color:var(--acc)}
+</style></head><body>
+<header><div class="wrap"><h1>Mahesh M</h1><p class="tag">Data analyst. I find where the money leaks and make the numbers reliable.</p>
+<div class="links"><a href="https://github.com/mahesh46m">GitHub</a><a href="https://www.linkedin.com/in/mahesh-m-62887639b/">LinkedIn</a></div></div></header>
+<main class="wrap">
+<section><h2>About</h2><p>I work on healthcare payments analytics: reconciliation, data quality and reporting that people can trust. I like questions that tie data to business impact, and I show my work in SQL and Python on real public data.</p>
+<div class="skills"><span>SQL</span><span>Python</span><span>DuckDB</span><span>Power BI</span><span>Tableau</span><span>Data quality</span><span>Reconciliation</span><span>ETL</span></div></section>
+<section><h2>Project: Healthcare Payments Leakage</h2>
+<div class="card"><p>Where does healthcare money leak? An end-to-end analysis of real Medicare payment data and the federal exclusion list: Python ingest, SQL in DuckDB, seven business questions, charts and a written findings doc. No synthetic data.</p>
+<div class="stats">
+<div class="stat"><b>$7.91B</b><small>submitted charges analyzed (Maryland, 2024)</small></div>
+<div class="stat"><b>27%</b><small>of submitted charges paid by Medicare</small></div>
+<div class="stat"><b>7</b><small>business questions, each one SQL file</small></div>
+<div class="stat"><b>63%</b><small>of summary dollars visible in service detail</small></div></div>
+<p><a href="https://github.com/mahesh46m/healthcare-payments-leakage">View the code and write-up on GitHub</a></p></div>
+<div class="grid">
+<figure><img src="img/q1_gap_by_specialty.png" alt="Charge to payment gap by specialty"><figcaption>Where submitted charges and payments diverge, by specialty.</figcaption></figure>
+<figure><img src="img/q3_outliers.png" alt="Provider outliers"><figcaption>Providers far above their specialty peers (review list, not accusations).</figcaption></figure>
+<figure><img src="img/q4_reconciliation.png" alt="Reconciliation"><figcaption>Provider summary versus service-level detail.</figcaption></figure>
+<figure><img src="img/q7_hospitals.png" alt="Hospital charge to payment ratio"><figcaption>Hospitals with the lowest payment-to-charge ratio.</figcaption></figure>
+</div></section>
+<section><h2>Contact</h2><p>Find me on <a href="https://www.linkedin.com/in/mahesh-m-62887639b/">LinkedIn</a> or <a href="https://github.com/mahesh46m">GitHub</a>.</p></section>
+</main><footer><div class="wrap">&copy; 2026 Mahesh M. Data sources: CMS data.cms.gov and HHS-OIG, public.</div></footer></body></html>
